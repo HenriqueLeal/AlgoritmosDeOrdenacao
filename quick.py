@@ -43,8 +43,8 @@ def partition(lista,primeiro,ultimo):
    return direita
 
 #num = 1000
-num = 5000
-#num = 10000
+#num = 5000
+num = 10000
 #num = 15000
 #num = 20000
 #num = 25000
@@ -52,11 +52,11 @@ num = 5000
 
 #lista de 1 a num
 
-'''
+
 lista = []
 for i in range(num):
     lista.append(i + 1)
-'''
+
 
 #lista de num a 1
 
@@ -69,7 +69,7 @@ while i <= num and i != 0:
 '''
 
 #lista aleatória
-lista = random.sample(range(num), num)
+#lista = random.sample(range(num), num)
 
 sys.setrecursionlimit(25000)
 
