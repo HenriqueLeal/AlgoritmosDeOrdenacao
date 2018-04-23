@@ -1,4 +1,5 @@
 import random
+import time
 
 #FUNCAO BUBBLE
 def bubbleSort(lista):
@@ -10,17 +11,17 @@ def bubbleSort(lista):
                 lista[i+1] = temp
 
 num = 1000
-#num = 5000
-#num = 10000
-#num = 15000
-#num = 20000
-#num = 25000
+num = 5000
+num = 10000
+num = 15000
+num = 20000
+num = 25000
 
-
+'''
 lista = []
 for i in range(num):
     lista.append(i + 1)
-
+'''
 
 '''
 lista = []
@@ -31,8 +32,10 @@ while i <= num and i != 0:
 '''
 
 
-#lista = random.sample(range(num), num)
+lista = random.sample(range(num), num)
 
-
+inicio = time.time()
 bubbleSort(lista)
+fim = time.time()
 print(lista)
+print(fim - inicio)
