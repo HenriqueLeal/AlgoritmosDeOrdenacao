@@ -1,4 +1,5 @@
 import random
+import time
 
 def insertionSort(lista):
    for index in range(1,len(lista)):
@@ -14,8 +15,8 @@ def insertionSort(lista):
 
 
 
-#num = 1000
-num = 5000
+num = 1000
+#num = 5000
 #num = 10000
 #num = 15000
 #num = 20000
@@ -24,11 +25,11 @@ num = 5000
 
 #lista de 1 a num
 
-'''
+
 lista = []
 for i in range(num):
     lista.append(i + 1)
-'''
+
 
 #lista de num a 1
 
@@ -42,7 +43,10 @@ while i <= num and i != 0:
 
 
 #lista aleatória
-lista = random.sample(range(num), num)
+#lista = random.sample(range(num), num)
 
+inicio = time.time()
 insertionSort(lista)
+fim = time.time()
 print(lista)
+print(fim - inicio)

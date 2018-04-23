@@ -1,4 +1,5 @@
 import random
+import time
 
 def troca(a, i, j):
   a[i], a[j] = a[j], a[i]
@@ -45,11 +46,11 @@ def heapsort(a):
 
 
 num = 1000
-#num = 5000
-#num = 10000
-#num = 15000
-#num = 20000
-#num = 25000
+num = 5000
+num = 10000
+num = 15000
+num = 20000
+num = 25000
 
 '''
 lista = []
@@ -65,9 +66,10 @@ while i <= num and i != 0:
     i -= 1;
 '''
 
-
 lista = random.sample(range(num), num)
 
-
+inicio = time.time()
 heapsort(lista)
+fim = time.time()
 print(lista)
+print(fim - inicio)
