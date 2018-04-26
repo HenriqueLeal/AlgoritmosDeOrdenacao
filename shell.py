@@ -1,4 +1,5 @@
 import random
+import time
 
 def shellSort(lista):
     sublista = len(lista)//2
@@ -23,12 +24,12 @@ def gapInsertionSort(lista,start,gap):
 
 
 
-#num = 1000
-#num = 5000
-#num = 10000
+num = 1000
+num = 5000
+num = 10000
 num = 15000
-#num = 20000
-#num = 25000
+num = 20000
+num = 25000
 
 
 #lista de 1 a num
@@ -54,5 +55,8 @@ while i <= num and i != 0:
 #lista aleatória
 lista = random.sample(range(num), num)
 
+inicio = time.time()
 shellSort(lista)
+fim = time.time()
 print(lista)
+print(fim - inicio)

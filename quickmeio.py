@@ -1,5 +1,6 @@
 import random
 import sys
+import time
 
 def troca(array,a,b):
     array[a],array[b] = array[b],array[a]
@@ -33,11 +34,11 @@ def quickSort(array):
 
 
 num = 1000
-#num = 5000
-#num = 10000
-#num = 15000
-#num = 20000
-#num = 25000
+num = 5000
+num = 10000
+num = 15000
+num = 20000
+num = 25000
 
 
 #lista de 1 a num
@@ -50,18 +51,26 @@ for i in range(num):
 
 #lista de num a 1
 
-
+'''
 lista = []
 i = num
 while i <= num and i != 0:
     lista.append(i);
     i -= 1;
-
+'''
 
 #lista aleatória
-#lista = random.sample(range(num), num)
+lista = random.sample(range(num), num)
 
 sys.setrecursionlimit(25000)
 
-quickSort(lista)
-print(lista)
+comeco = time.time()
+try:
+   quickSort(lista)
+   final = time.time()
+   print(lista)
+   print(final - comeco)
+except Exception as e:
+   final = time.time()
+   print(final - comeco)
+
