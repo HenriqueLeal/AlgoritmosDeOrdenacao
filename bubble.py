@@ -13,9 +13,9 @@ def bubbleSort(lista):
 num = 1000
 num = 5000
 num = 10000
-num = 15000
-num = 20000
-num = 25000
+#num = 15000
+#num = 20000
+#num = 25000
 
 '''
 lista = []
@@ -23,16 +23,16 @@ for i in range(num):
     lista.append(i + 1)
 '''
 
-'''
+
 lista = []
 i = num
 while i <= num and i != 0:
     lista.append(i);
     i -= 1;
-'''
 
 
-lista = random.sample(range(num), num)
+
+#lista = random.sample(range(num), num)
 
 inicio = time.time()
 bubbleSort(lista)
