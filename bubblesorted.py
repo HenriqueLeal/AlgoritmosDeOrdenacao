@@ -1,4 +1,4 @@
-import random
+import random 
 import time
 
 def ordena(lista):
@@ -22,7 +22,7 @@ num = 20000
 num = 25000
 
 
-#lista de 1 a num
+ #lista de 1 a num
 lista = []
 for i in range(num):
     lista.append(i + 1)

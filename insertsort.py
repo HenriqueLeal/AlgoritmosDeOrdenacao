@@ -16,7 +16,7 @@ def insertionSort(lista):
 
 
 num = 1000
-#num = 5000
+ #num = 5000
 #num = 10000
 #num = 15000
 #num = 20000

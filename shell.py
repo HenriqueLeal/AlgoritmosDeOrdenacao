@@ -32,7 +32,7 @@ num = 20000
 num = 25000
 
 
-#lista de 1 a num
+ #lista de 1 a num
 
 '''
 lista = []

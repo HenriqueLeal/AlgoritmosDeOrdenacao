@@ -1,7 +1,7 @@
 import random
 import time
 
-#FUNCAO BUBBLE
+ #FUNCAO BUBBLE
 def bubbleSort(lista):
     for passnum in range(len(lista)-1,0,-1):
         for i in range(passnum):
